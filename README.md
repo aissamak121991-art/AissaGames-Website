@@ -94,13 +94,24 @@ Then open <http://localhost:8080>.
 ## Deployment
 
 Deploys as-is to **GitHub Pages, Netlify, Cloudflare Pages, or Vercel** with no
-extra configuration. For GitHub Pages, push the repository and enable Pages on
-the default branch (root).
+extra configuration.
+
+**All asset and internal-link references are relative** (`css/style.css`,
+`js/theme.js`, `index.html`, …) — not root-absolute (`/css/…`). This is what
+makes the site work as a GitHub Pages **project** site served under a subpath,
+e.g. `https://<user>.github.io/AissaGames-Website/`, as well as at a domain root.
+Do not reintroduce leading slashes on `href`/`src`.
+
+The absolute URLs that must point at the live host — `<link rel="canonical">`,
+Open Graph / Twitter image and URL, JSON-LD, and `sitemap.xml`/`robots.txt` — are
+currently set to `https://aissamak121991-art.github.io/AissaGames-Website/`.
 
 ### Configuration to review before launch
 
-- Replace the domain `https://aissagames.com` in `sitemap.xml`, `robots.txt`,
-  and the `<link rel="canonical">` / Open Graph URLs if you use a different one.
+- If you move to a custom domain (e.g. `aissagames.com`), replace the base
+  `https://aissamak121991-art.github.io/AissaGames-Website/` in `sitemap.xml`,
+  `robots.txt`, and each page's canonical / Open Graph URLs. The relative asset
+  paths need no change.
 - A binary `favicon.ico` (16/32/48 px) ships alongside `favicon.svg` for legacy
   browsers; the SVG favicon covers modern browsers.
 - GitHub Pages cannot send custom HTTP headers, so security is enforced in-page

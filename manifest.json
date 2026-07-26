@@ -4,8 +4,8 @@
   "description": "Official website of AissaGames, independent game studio and creator of Kharbga.",
   "lang": "en",
   "dir": "ltr",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "index.html",
+  "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#04060f",
@@ -13,13 +13,19 @@
   "categories": ["games", "entertainment"],
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo/aissagames-mark.svg",
+      "src": "assets/logo/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logo/aissagames-mark.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "maskable"

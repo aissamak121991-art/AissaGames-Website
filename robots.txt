@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://aissagames.com/sitemap.xml
+Sitemap: https://aissamak121991-art.github.io/AissaGames-Website/sitemap.xml
