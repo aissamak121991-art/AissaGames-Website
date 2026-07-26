@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AissaGames — Official Game Studio · Kharbga</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="AissaGames is an independent game studio crafting timeless, heritage-inspired games. Discover Kharbga, our authentic North African strategy board game, plus our privacy, terms and player support." />
+  <meta name="keywords" content="AissaGames, Kharbga, board game, strategy game, North African game, indie game studio, Unity game, mobile game" />
+  <meta name="author" content="AissaGames" />
+  <meta name="theme-color" content="#04060f" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self' mailto:; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests" />
+  <link rel="canonical" href="https://aissagames.com/index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AissaGames" />
+  <meta property="og:title" content="AissaGames — Official Game Studio · Kharbga" />
+  <meta property="og:description" content="An independent game studio crafting timeless, heritage-inspired games. Meet Kharbga, our authentic North African strategy board game." />
+  <meta property="og:url" content="https://aissagames.com/index.html" />
+  <meta property="og:image" content="https://aissagames.com/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="AissaGames — Kharbga, the timeless North African strategy board game" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AissaGames — Official Game Studio · Kharbga" />
+  <meta name="twitter:description" content="An independent game studio crafting timeless, heritage-inspired games. Meet Kharbga." />
+  <meta name="twitter:image" content="https://aissagames.com/assets/images/og-image.png" />
+
+  <!-- Icons & manifest -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Styles -->
+  <link rel="preload" href="/css/style.css" as="style" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/dark.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+
+  <!-- Theme (early, no-flash) -->
+  <script src="/js/theme.js"></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://aissagames.com/#org",
+        "name": "AissaGames",
+        "url": "https://aissagames.com/",
+        "logo": "https://aissagames.com/assets/logo/aissagames-mark.svg",
+        "email": "aissamak121991@gmail.com",
+        "description": "Independent game studio creating timeless, heritage-inspired games."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aissagames.com/#website",
+        "url": "https://aissagames.com/",
+        "name": "AissaGames",
+        "publisher": { "@id": "https://aissagames.com/#org" }
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Kharbga",
+        "url": "https://aissagames.com/index.html#game",
+        "author": { "@id": "https://aissagames.com/#org" },
+        "publisher": { "@id": "https://aissagames.com/#org" },
+        "genre": ["Strategy", "Board Game"],
+        "gamePlatform": ["Android", "iOS", "PC"],
+        "applicationCategory": "GameApplication"
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="brand" href="/index.html" aria-label="AissaGames home">
+        <img class="brand__mark" src="/assets/logo/aissagames-mark.svg" alt="" width="38" height="38" />
+        <span class="brand__name">Aissa<b>Games</b></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__menu" id="primary-menu" data-nav-menu>
+          <li><a class="nav__link" data-page-link="home" href="/index.html">Home</a></li>
+          <li><a class="nav__link" data-page-link="support" href="/support.html">Support</a></li>
+          <li><a class="nav__link" data-page-link="faq" href="/faq.html">FAQ</a></li>
+          <li><a class="nav__link" data-page-link="privacy" href="/privacy.html">Privacy</a></li>
+          <li><a class="nav__link" data-page-link="terms" href="/terms.html">Terms</a></li>
+          <li><a class="nav__link" data-page-link="contact" href="/contact.html">Contact</a></li>
+          <li><a class="btn btn--primary" href="/support.html">Get Support</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="nav__toggle" type="button" data-nav-toggle aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__orb hero__orb--1"></span>
+        <span class="hero__orb hero__orb--2"></span>
+        <span class="hero__orb hero__orb--3"></span>
+      </div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge"><b>NEW</b> Kharbga is live on mobile</span>
+          <h1 class="hero__title">Timeless games,<br /><span class="text-gradient">crafted with heritage.</span></h1>
+          <p class="hero__lead">AissaGames is an independent studio reviving classic strategy for a modern audience — beginning with Kharbga.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="#game">
+              Explore Kharbga
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="/support.html">Player Support</a>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dd class="stat__num">7×7</dd>
+              <dt class="stat__label">Classic board</dt>
+            </div>
+            <div>
+              <dd class="stat__num">2</dd>
+              <dt class="stat__label">Players</dt>
+            </div>
+            <div>
+              <dd class="stat__num">100<b>%</b></dd>
+              <dt class="stat__label">Free to play</dt>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual">
+          <div class="board-card">
+            <div class="board-card__head">
+              <span class="board-card__title">Kharbga</span>
+              <span class="board-card__tag">7 × 7 Strategy</span>
+            </div>
+            <div class="board" role="img" aria-label="A 7 by 7 Kharbga board with emerald and gold pieces">
+              <!-- 49 cells generated statically for a premium look -->
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+              <div class="board__cell"></div>
+              <div class="board__cell"><span class="board__piece board__piece--b"></span></div>
+              <div class="board__cell"><span class="board__piece board__piece--a"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED GAME ===================== -->
+    <section class="section" id="game">
+      <div class="container">
+        <div class="feature-split">
+          <div data-reveal="left">
+            <span class="eyebrow">Featured Game</span>
+            <h2 class="section-title">Kharbga — the North African game of strategy</h2>
+            <p>Kharbga is a centuries-old two-player abstract strategy game played across North Africa. AissaGames rebuilds it with a premium, faithful experience: authentic rules, an elegant board, and smooth play on every device.</p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Authentic 7×7 board and traditional capture rules.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Play against a friend or a sharpened AI opponent.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Cloud Save and leaderboards powered by Unity Gaming Services.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Free to play, with a clean, ad-light design.</span>
+              </li>
+            </ul>
+            <div class="hero__cta mt-6">
+              <a class="btn btn--gold" href="/support.html">How to play &amp; support</a>
+              <a class="btn btn--ghost" href="/faq.html">Read the FAQ</a>
+            </div>
+          </div>
+
+          <div class="card" data-reveal="right">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg>
+            </span>
+            <h3 class="card__title">Built on Unity Gaming Services</h3>
+            <p class="card__text">Kharbga uses Unity Player Accounts for sign-in, Cloud Save for your progress, Leaderboards for competition, and Analytics to keep improving the game — with your privacy respected at every step.</p>
+            <div class="tag-row">
+              <span class="tag">Player Accounts</span>
+              <span class="tag">Cloud Save</span>
+              <span class="tag">Leaderboards</span>
+              <span class="tag">Economy</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PILLARS ===================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Why AissaGames</span>
+          <h2 class="section-title">A studio built on craft and respect</h2>
+          <p class="section-sub">Every title we ship is made to last — technically solid, culturally rooted, and fair to players.</p>
+        </div>
+        <div class="grid grid-3" data-reveal-stagger>
+          <article class="card card--hover">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17.5 6.5 21 8 13.5 3 9l6.5-.5z"/></svg></span>
+            <h3 class="card__title">Heritage first</h3>
+            <p class="card__text">We revive authentic games with faithful rules, honouring the traditions they come from.</p>
+          </article>
+          <article class="card card--hover">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <h3 class="card__title">Fair &amp; private</h3>
+            <p class="card__text">Transparent data practices, no dark patterns, and full control over your account and progress.</p>
+          </article>
+          <article class="card card--hover">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>
+            <h3 class="card__title">Polished &amp; fast</h3>
+            <p class="card__text">Premium presentation and smooth performance across phones, tablets, and beyond.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUICK LINKS ===================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Official Links</span>
+          <h2 class="section-title">Everything players need</h2>
+        </div>
+        <div class="grid grid-2" data-reveal-stagger>
+          <a class="card card--hover linktile" href="/privacy.html">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <span><strong>Privacy Policy</strong><br /><span class="muted">How we handle your data.</span></span>
+            <svg class="linktile__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="card card--hover linktile" href="/terms.html">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+            <span><strong>Terms of Service</strong><br /><span class="muted">The rules of play and use.</span></span>
+            <svg class="linktile__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="card card--hover linktile" href="/delete-account.html">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></span>
+            <span><strong>Delete Account</strong><br /><span class="muted">Remove your Unity Player Account.</span></span>
+            <svg class="linktile__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="card card--hover linktile" href="/contact.html">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></span>
+            <span><strong>Contact</strong><br /><span class="muted">Reach the studio directly.</span></span>
+            <svg class="linktile__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VISION ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="vision" data-reveal="scale">
+          <span class="eyebrow">Our Vision</span>
+          <h2 class="section-title mw-22">Bringing the world's classic games to every screen.</h2>
+          <p class="section-sub mw-60">AissaGames exists to preserve and modernise timeless games. Kharbga is the first of many — each rebuilt with respect for its origins and the polish players expect today. We build on robust, cross-platform technology so our titles can reach mobile, PC, and console alike.</p>
+          <div class="hero__cta mt-6">
+            <a class="btn btn--primary" href="/contact.html">Work with us</a>
+            <a class="btn btn--ghost" href="/support.html">Player Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="/index.html" aria-label="AissaGames home">
+            <img class="brand__mark" src="/assets/logo/aissagames-mark.svg" alt="" width="38" height="38" />
+            <span class="brand__name">Aissa<b>Games</b></span>
+          </a>
+          <p>Independent game studio crafting timeless, heritage-inspired games. Creators of Kharbga.</p>
+          <div class="footer__social">
+            <a href="/contact.html" aria-label="Contact AissaGames">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
+            </a>
+            <a href="/support.html" aria-label="AissaGames support">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>
+            </a>
+            <a href="mailto:aissamak121991@gmail.com" aria-label="Email AissaGames">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h2>Studio</h2>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#game">Kharbga</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="/support.html">Support Center</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/delete-account.html">Delete Account</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span data-year>2026</span> AissaGames. All rights reserved.</span>
+        <span class="badge-version">Website v1.0.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/navigation.js" defer></script>
+  <script src="/js/animations.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

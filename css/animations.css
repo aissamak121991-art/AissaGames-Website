@@ -1,0 +1,177 @@
+/* =============================================================
+   AissaGames — animations.css
+   Professional, restrained motion. All heavy motion is gated
+   behind prefers-reduced-motion.
+   ============================================================= */
+
+/* Keyframes ---------------------------------------------------- */
+@keyframes ripple {
+  to {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes orbDrift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(24px, -20px) scale(1.06);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 rgba(31, 168, 119, 0);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 18px rgba(31, 168, 119, 0.5);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Entrance / hero micro-motion --------------------------------- */
+.hero__badge {
+  animation: fadeInUp 0.7s var(--ease-out) both;
+}
+.hero__title {
+  animation: fadeInUp 0.7s 0.08s var(--ease-out) both;
+}
+.hero__lead {
+  animation: fadeInUp 0.7s 0.16s var(--ease-out) both;
+}
+.hero__cta {
+  animation: fadeInUp 0.7s 0.24s var(--ease-out) both;
+}
+.hero__stats {
+  animation: fadeInUp 0.7s 0.32s var(--ease-out) both;
+}
+.hero__visual {
+  animation: fadeInUp 0.9s 0.2s var(--ease-out) both;
+}
+
+.board-card {
+  animation: floatY 7s ease-in-out infinite;
+}
+
+.hero__orb {
+  animation: orbDrift 16s ease-in-out infinite;
+}
+.hero__orb--2 {
+  animation-duration: 20s;
+  animation-direction: reverse;
+}
+.hero__orb--3 {
+  animation-duration: 24s;
+}
+
+.board__piece--a {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Scroll reveal ------------------------------------------------
+   The hidden starting state is gated behind the `.js` class (added by
+   theme.js). Without JavaScript, nothing is hidden — all content shows. */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Directional reveals move vertically only: horizontal transforms near the
+   viewport edge can create off-screen overflow before they animate in. */
+.js [data-reveal="scale"] {
+  transform: scale(0.94);
+}
+.js [data-reveal="scale"].is-visible {
+  transform: scale(1);
+}
+
+/* Stagger children */
+.js [data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.js [data-reveal-stagger].is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal-stagger].is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+[data-reveal-stagger].is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+[data-reveal-stagger].is-visible > *:nth-child(3) { transition-delay: 0.19s; }
+[data-reveal-stagger].is-visible > *:nth-child(4) { transition-delay: 0.26s; }
+[data-reveal-stagger].is-visible > *:nth-child(5) { transition-delay: 0.33s; }
+[data-reveal-stagger].is-visible > *:nth-child(6) { transition-delay: 0.40s; }
+
+/* Link/nav shimmer on brand mark hover */
+.brand:hover .brand__mark {
+  filter: drop-shadow(0 0 10px var(--glow-primary));
+  transition: filter var(--dur) var(--ease);
+}
+
+/* -------------------------------------------------------------
+   Reduced motion — disable all non-essential animation.
+   ------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal],
+  [data-reveal-stagger] > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .board-card,
+  .hero__orb,
+  .board__piece--a {
+    animation: none !important;
+  }
+}

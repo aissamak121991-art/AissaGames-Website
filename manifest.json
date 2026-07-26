@@ -1,0 +1,28 @@
+{
+  "name": "AissaGames — Official Studio",
+  "short_name": "AissaGames",
+  "description": "Official website of AissaGames, independent game studio and creator of Kharbga.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#04060f",
+  "theme_color": "#04060f",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo/aissagames-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

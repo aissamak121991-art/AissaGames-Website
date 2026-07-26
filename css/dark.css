@@ -1,0 +1,145 @@
+/* =============================================================
+   AissaGames — dark.css
+   Theme layer. The site is dark-luxury by default (see style.css).
+   This file defines the LIGHT theme overrides applied when the
+   user manually switches, plus the automatic system mapping.
+   Theme is controlled by [data-theme] on <html> (set by theme.js).
+   ============================================================= */
+
+/* -------------------------------------------------------------
+   Light theme — premium "ivory & emerald" palette
+   Activated by data-theme="light".
+   ------------------------------------------------------------- */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f6f9;
+  --bg-elevated: #ffffff;
+  --bg-gradient-1: #e4efe9;
+  --bg-gradient-2: #eef2f8;
+  --bg-gradient-3: #f5f8fb;
+
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-solid: #ffffff;
+  --surface-border: rgba(15, 106, 77, 0.14);
+  --surface-border-strong: rgba(15, 106, 77, 0.28);
+
+  --text: #0b1c17;
+  --text-soft: #33443f;
+  --text-muted: #55647a;
+
+  --primary: var(--emerald-600);
+  --primary-strong: var(--emerald-700);
+  --secondary: var(--navy-600);
+  --accent: var(--gold-600);
+
+  --glow-primary: rgba(15, 106, 77, 0.28);
+  --glow-accent: rgba(185, 138, 46, 0.28);
+
+  --shadow-sm: 0 2px 8px rgba(16, 29, 66, 0.08);
+  --shadow-md: 0 12px 32px rgba(16, 29, 66, 0.12);
+  --shadow-lg: 0 28px 70px rgba(16, 29, 66, 0.18);
+  --shadow-glow: 0 0 40px var(--glow-primary);
+
+  --focus-ring: 0 0 0 3px rgba(15, 106, 77, 0.4);
+}
+
+[data-theme="light"] body {
+  background-image:
+    radial-gradient(1200px 700px at 15% -10%, var(--bg-gradient-1), transparent 60%),
+    radial-gradient(1000px 600px at 90% 0%, var(--bg-gradient-2), transparent 55%),
+    linear-gradient(180deg, var(--bg-gradient-3), var(--bg));
+}
+
+[data-theme="light"] .nav.is-scrolled {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 30px rgba(16, 29, 66, 0.1);
+}
+
+[data-theme="light"] .btn--ghost {
+  background: rgba(15, 106, 77, 0.04);
+  color: var(--text);
+}
+
+[data-theme="light"] .btn--ghost:hover {
+  background: rgba(15, 106, 77, 0.09);
+}
+
+[data-theme="light"] .hero__grid-overlay {
+  background-image:
+    linear-gradient(rgba(15, 106, 77, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 106, 77, 0.05) 1px, transparent 1px);
+}
+
+[data-theme="light"] .hero__orb--1 {
+  background: radial-gradient(circle, rgba(31, 168, 119, 0.28), transparent 70%);
+}
+
+[data-theme="light"] .hero__orb--2 {
+  background: radial-gradient(circle, rgba(216, 171, 69, 0.22), transparent 70%);
+}
+
+[data-theme="light"] .board {
+  background: linear-gradient(135deg, var(--emerald-600), var(--navy-600));
+}
+
+[data-theme="light"] .doc-table th {
+  background: rgba(15, 106, 77, 0.06);
+}
+
+[data-theme="light"] .badge-version::before,
+[data-theme="light"] .footer {
+  /* keep emerald accent readable on light */
+}
+
+[data-theme="light"] .input,
+[data-theme="light"] .textarea,
+[data-theme="light"] .select,
+[data-theme="light"] .chip,
+[data-theme="light"] .theme-toggle,
+[data-theme="light"] .nav__toggle,
+[data-theme="light"] .btn--ghost {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="light"] .footer {
+  background: linear-gradient(180deg, transparent, rgba(228, 239, 233, 0.6));
+}
+
+/* -------------------------------------------------------------
+   Selection & scrollbar polish (both themes)
+   ------------------------------------------------------------- */
+::selection {
+  background: rgba(31, 168, 119, 0.35);
+  color: #fff;
+}
+
+[data-theme="light"] ::selection {
+  background: rgba(15, 106, 77, 0.2);
+  color: #0b1c17;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--surface-border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--surface-border-strong);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+  background-clip: padding-box;
+}

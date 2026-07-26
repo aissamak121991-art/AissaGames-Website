@@ -1,0 +1,240 @@
+/* =============================================================
+   AissaGames — responsive.css
+   Breakpoints: ultra-wide, desktop, laptop, tablet, mobile.
+   Mobile navigation drawer lives here.
+   ============================================================= */
+
+/* Ultra-wide screens */
+@media (min-width: 1600px) {
+  :root {
+    --container: 1320px;
+  }
+  .hero__title {
+    font-size: clamp(3rem, 5vw, 5.4rem);
+  }
+}
+
+/* Laptop / small desktop */
+@media (max-width: 1080px) {
+  .footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  :root {
+    --nav-h: 64px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero__content {
+    margin-inline: auto;
+  }
+
+  .hero__lead {
+    max-width: 46ch;
+    margin-inline: auto;
+  }
+
+  .hero__cta,
+  .hero__stats {
+    justify-content: center;
+  }
+
+  .hero__visual {
+    order: -1;
+    margin-bottom: var(--sp-4);
+  }
+
+  .board-card {
+    width: min(100%, 360px);
+  }
+
+  .feature-split {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Legal docs: collapse the TOC to the top */
+  .doc-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-toc {
+    position: static;
+    max-height: none;
+    order: -1;
+  }
+
+  .doc-toc ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Mobile navigation --- */
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__menu {
+    position: fixed;
+    inset: var(--nav-h) 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--sp-4) clamp(1.1rem, 4vw, 2.5rem) var(--sp-6);
+    background: rgba(4, 6, 15, 0.96);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border-bottom: 1px solid var(--surface-border);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--dur) var(--ease),
+      opacity var(--dur) var(--ease), visibility var(--dur);
+    max-height: calc(100vh - var(--nav-h));
+    overflow-y: auto;
+  }
+
+  [data-theme="light"] .nav__menu {
+    background: rgba(243, 246, 249, 0.97);
+  }
+
+  .nav__menu.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__link {
+    padding: 0.95rem 0.5rem;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--surface-border);
+    border-radius: 0;
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .nav__menu .btn {
+    margin-top: var(--sp-4);
+  }
+}
+
+/* Mobile */
+@media (max-width: 620px) {
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .doc-toc ol {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
+  }
+
+  .hero__stats {
+    gap: 1.4rem;
+  }
+
+  .section-head {
+    margin-bottom: var(--sp-6);
+  }
+
+  .card {
+    padding: var(--sp-5);
+  }
+
+  .footer__bar {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .faq-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .steps li {
+    padding-left: var(--sp-5);
+    padding-top: 4.2rem;
+  }
+
+  .steps li::before {
+    top: var(--sp-4);
+  }
+}
+
+/* Very small devices */
+@media (max-width: 380px) {
+  .brand__name {
+    font-size: 1rem;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Landscape phones — reduce vertical padding */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero {
+    padding-top: calc(var(--nav-h) + 2rem);
+  }
+  .notfound {
+    min-height: auto;
+    padding-block: var(--sp-7);
+  }
+}
+
+/* Print — clean legal documents */
+@media print {
+  .nav,
+  .footer,
+  .doc-toc,
+  .theme-toggle,
+  .hero__bg,
+  .btn {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .doc-layout {
+    grid-template-columns: 1fr;
+  }
+  .doc-body p,
+  .doc-body li,
+  .doc-body h2,
+  .doc-body h3 {
+    color: #000;
+  }
+}

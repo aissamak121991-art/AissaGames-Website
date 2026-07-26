@@ -1,0 +1,6 @@
+# AissaGames — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aissagames.com/sitemap.xml
