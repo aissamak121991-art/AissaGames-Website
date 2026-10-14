@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — MINDLOCK</title>
-<meta name="description" content="How MINDLOCK handles information: game progress is stored only on your device, and advertising is served by Google AdMob. Written for the game as it actually works.">
+<meta name="description" content="How MINDLOCK handles information: game progress is stored only on your device, and advertising is served through Unity LevelPlay and Unity Ads. Written for the game as it actually works.">
 <meta name="robots" content="index, follow">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="legal.css">
@@ -18,7 +18,7 @@
     <h1>Privacy Policy</h1>
     <p class="masthead__meta">
       Effective date: <strong>October 8, 2026</strong> ·
-      Last updated: <strong>October 8, 2026</strong>
+      Last updated: <strong>October 14, 2026</strong>
     </p>
   </div>
 </header>
@@ -34,10 +34,12 @@
 
   <div class="lead">
     <p><strong>The short version.</strong> MINDLOCK is a single-player code-breaking puzzle game
-    that runs offline. Your progress, coins, daily-challenge record and settings are saved <strong>only on your device</strong> — we
-    have no servers and no accounts, so we never receive them. The game shows advertisements through
-    <strong>Google AdMob</strong>, and Google's advertising software does process some information
-    about your device in order to deliver those ads. This policy explains exactly which is which.</p>
+    that runs offline. Your progress, coins, treasures, daily-challenge record and settings are saved
+    <strong>only on your device</strong> — we have no servers and no accounts, so we never receive
+    them. The game shows advertisements through <strong>Unity LevelPlay</strong>, an advertising
+    mediation service from Unity Technologies, with <strong>Unity Ads</strong> as an advertising
+    network. That advertising software does process some information about your device in order to
+    deliver those ads. This policy explains exactly which is which.</p>
   </div>
 
   <section class="summary" aria-labelledby="ataglance">
@@ -47,10 +49,10 @@
       <li>No name, email, phone number, contacts, photos, microphone, camera or GPS location.</li>
       <li>No analytics and no crash-reporting service in the game.</li>
       <li>Game progress stays on your device and is deleted when you uninstall the game.</li>
-      <li>Advertising is served by Google; Google's SDK processes advertising data described in
-          section 4.</li>
-      <li>Where the law requires it, Google's consent form asks you first, and you can change your
-          choice later in Settings.</li>
+      <li>Advertising is served through Unity LevelPlay and Unity Ads; their software processes the
+          advertising data described in section 4.</li>
+      <li>In the European Economic Area, the United Kingdom and Switzerland, the game asks for your
+          choice before any advertisement is requested, and you can change it later in Settings.</li>
       <li>There are no in-app purchases.</li>
     </ul>
   </section>
@@ -61,7 +63,7 @@
       <li><a href="#who">Who we are</a></li>
       <li><a href="#scope">Scope of this policy</a></li>
       <li><a href="#local">Information stored on your device</a></li>
-      <li><a href="#ads">Advertising and Google AdMob</a></li>
+      <li><a href="#ads">Advertising: Unity LevelPlay and Unity Ads</a></li>
       <li><a href="#consent">Consent and your advertising choices</a></li>
       <li><a href="#purposes">Why information is processed</a></li>
       <li><a href="#legal-bases">Legal bases (EEA and UK)</a></li>
@@ -87,7 +89,7 @@
   <a href="mailto:aissamak121991@gmail.com">aissamak121991@gmail.com</a>.</p>
 
   <h2 id="scope">2. Scope of this policy</h2>
-  <p>This policy covers the MINDLOCK mobile game only. It does not cover Google Play, Google's
+  <p>This policy covers the MINDLOCK mobile game only. It does not cover Google Play, Unity's
   advertising services, or any other website or service you may reach from the game — those are
   governed by their own policies, linked in section 15.</p>
   <p>We describe what the game actually does. Where something is done by a third party's software
@@ -98,28 +100,33 @@
   uploaded, and we never receive it.</strong> It contains no personal information:</p>
   <ul>
     <li>Your progress — which levels and worlds you have completed and the stars earned on each.</li>
-    <li>Your in-game items — coins you have earned and your power-ups (Reveal, Eliminate, Extra
-        attempts).</li>
+    <li>Your in-game items — coins you have earned, your power-ups (Reveal, Eliminate, Extra
+        attempts) and the treasures you have collected from vaults.</li>
     <li>Your daily-challenge record — the guesses of today's puzzle (so a reopened game resumes it),
         games played, wins, current and best streak, and how many guesses your wins took.</li>
     <li>Which tutorials you have already seen.</li>
     <li>Your settings — music, sound effects, vibration and chosen language
         (English, Arabic or French).</li>
+    <li>Your advertising choice, if you were asked for it (see section 5).</li>
     <li>Counters used to keep advertisements infrequent and to limit reward videos per day.</li>
   </ul>
   <p>The daily challenge is chosen from the current date on your device; the game does not contact
   any server to obtain it. The game also reads your screen's size and pixel density so the layout
-  and the banner fit your screen. This happens <strong>on the device</strong> and nothing is sent
-  anywhere.</p>
+  and the banner fit your screen, and your device's country setting (from the SIM card, the mobile
+  network or the language settings) only to decide whether the advertising choice of section 5 must
+  be shown. This happens <strong>on the device</strong> and nothing is sent anywhere by the game.</p>
   <p><strong>Sharing a result.</strong> After a daily challenge you may tap <em>Share</em>. The game
-  then hands a short text (the puzzle number and a grid of coloured squares, with no personal
-  information) to Android's own share sheet, and you choose where it goes. We never receive it.</p>
+  then hands a short text (the puzzle number and a row of symbols, with no personal information) to
+  Android's own share sheet, and you choose where it goes. We never receive it.</p>
   <p>There is no account, no cloud save and no synchronisation between devices.</p>
 
-  <h2 id="ads">4. Advertising and Google AdMob</h2>
-  <p>MINDLOCK is free and supported by advertising. Advertisements are delivered by the
-  <strong>Google Mobile Ads SDK (AdMob)</strong>, which is software from Google included in the app.
-  Three formats are used:</p>
+  <h2 id="ads">4. Advertising: Unity LevelPlay and Unity Ads</h2>
+  <p>MINDLOCK is free and supported by advertising. Advertisements are delivered by
+  <strong>Unity LevelPlay</strong>, an advertising mediation service operated by Unity Technologies
+  (which includes the former ironSource), and by the <strong>Unity Ads</strong> network. Both are
+  software from Unity included in the app. LevelPlay chooses, for each request, which network
+  provides the advertisement; more networks may be added in the future, in which case they will be
+  listed here. Three formats are used:</p>
   <ul>
     <li><strong>Banner</strong> — a small advertisement at the bottom of the screen, in a space the
         game reserves for it so it never covers the board.</li>
@@ -132,60 +139,65 @@
         play, and you are never required to watch one.</li>
   </ul>
   <p><strong>We do not collect advertising data ourselves.</strong> The game does not read, store or
-  transmit your advertising identifier, your IP address or any device identifier. It asks Google's
-  software to show an advertisement, and that software communicates with Google.</p>
-  <p>According to Google's own published disclosure for the version of the Google Mobile Ads SDK
-  used by this game, the SDK collects and shares the following, encrypted in transit:</p>
+  transmit your advertising identifier, your IP address or any device identifier. It asks the
+  advertising software to show an advertisement, and that software communicates with Unity and,
+  through it, with the advertising networks and advertisers taking part.</p>
+  <p>According to Unity's own published disclosures for its advertising software, it collects and
+  shares the following, encrypted in transit:</p>
   <div class="table-wrap">
   <table>
-    <caption>Processed by Google's advertising software inside the app — not by us</caption>
+    <caption>Processed by Unity's advertising software inside the app — not by us</caption>
     <thead>
       <tr><th scope="col">Information</th><th scope="col">What it is</th><th scope="col">Used for</th></tr>
     </thead>
     <tbody>
       <tr>
-        <td>IP address</td>
-        <td>The network address of your device, which Google may use to estimate its general
-        (approximate) location. Your precise location is never requested.</td>
-        <td>Delivering advertisements, fraud prevention, security</td>
+        <td>IP address and approximate location</td>
+        <td>The network address of your device, from which a general (approximate) location can be
+        estimated. Your precise location is never requested.</td>
+        <td>Delivering advertisements, analytics, fraud prevention, security, compliance</td>
       </tr>
       <tr>
         <td>Advertising and device identifiers</td>
-        <td>The Android advertising ID, app set ID and account identifiers.</td>
-        <td>Advertising, measurement, fraud prevention</td>
+        <td>The Android advertising ID and other device or app identifiers.</td>
+        <td>Advertising, measurement, fraud prevention, security</td>
+      </tr>
+      <tr>
+        <td>Device and app information</td>
+        <td>Device model, operating system and language, network type, app version.</td>
+        <td>Delivering suitable advertisements, app functionality</td>
       </tr>
       <tr>
         <td>Advertisement interactions</td>
-        <td>Which advertisements were shown, viewed or tapped, and related app interactions.</td>
+        <td>Which advertisements were shown, viewed, completed or tapped, and related app activity.</td>
         <td>Measurement and analytics for advertising</td>
       </tr>
       <tr>
         <td>Diagnostics</td>
-        <td>Technical measurements such as launch time, responsiveness and energy use.</td>
-        <td>Monitoring how the advertising software performs</td>
+        <td>Technical measurements about how the advertising software performs.</td>
+        <td>App functionality, analytics</td>
       </tr>
     </tbody>
   </table>
   </div>
-  <p>Google acts as an independent provider for this processing and handles that information under
-  its own privacy policy and advertising terms, which are linked in section 15. We do not receive
-  this information, and we cannot access, correct or delete it on your behalf.</p>
+  <p>Unity handles that information as an independent provider under its own privacy policy, which
+  is linked in section 15. We do not receive this information, and we cannot access, correct or
+  delete it on your behalf. Unity Ads advertisements usually show an information or privacy button
+  through which you can learn more and make requests to Unity directly.</p>
 
   <h2 id="consent">5. Consent and your advertising choices</h2>
-  <p>The game uses <strong>Google's User Messaging Platform</strong> to handle consent. When you
-  start the game:</p>
+  <p>If your device's country is in the <strong>European Economic Area, the United Kingdom or
+  Switzerland</strong>, the game shows its own consent message the first time it starts:</p>
   <ol>
-    <li>Google determines whether a consent message is required for your region.</li>
-    <li>If it is, Google's own form appears and you make your choice there.</li>
-    <li>Advertising is initialised <strong>only</strong> once Google reports that advertisements may
-        be requested.</li>
+    <li>You choose <strong>Personalised ads</strong> or <strong>General ads only</strong>. Both
+        choices are equally easy, and the game is the same whichever you pick.</li>
+    <li><strong>No advertisement is requested before you answer.</strong></li>
+    <li>Your answer is saved on your device (section 3) and passed to the advertising software,
+        which then shows only non-personalised advertisements if you chose general ads.</li>
   </ol>
-  <p>Your consent choice is recorded and managed by Google's software. We do not store it, and we
-  cannot see it.</p>
-  <p><strong>Changing your mind.</strong> Where Google indicates that privacy options must remain
-  available, the game shows a <strong>Privacy choices</strong> button in
-  <em>Settings</em>, which reopens Google's form so you can change your decision. If the button is
-  not shown, Google has determined that the form is not required in your region.</p>
+  <p><strong>Changing your mind.</strong> In those regions, <em>Settings</em> shows a
+  <strong>Privacy choices</strong> button that reopens the same message so you can change your
+  decision at any time; the new choice applies straight away.</p>
   <p>Independently of the game, you can reset or delete your Android advertising ID, and turn off ad
   personalisation, in your device's own settings — see the Android help page linked in section 15.
   If you delete your advertising ID, you will still see advertisements, but they will not be
@@ -200,7 +212,7 @@
     <li><strong>To suit your device</strong> — fitting the layout to your screen, on the device.</li>
     <li><strong>To fund the game</strong> — showing advertisements, which is how a free game without
         purchases is paid for.</li>
-    <li><strong>To measure and protect advertising</strong> — Google's measurement, fraud prevention
+    <li><strong>To measure and protect advertising</strong> — Unity's measurement, fraud prevention
         and security purposes described in section 4.</li>
   </ul>
   <p>We do not profile you, we do not build audiences, and we do not sell anything about you,
@@ -211,8 +223,8 @@
   described above rests on:</p>
   <ul>
     <li><strong>Consent</strong> — for personalised advertising and for storing or reading
-        information on your device for advertising purposes, where consent is required. Consent is
-        collected through Google's consent form and may be withdrawn as described in section 5.</li>
+        information on your device for advertising purposes. Consent is collected through the
+        game's consent message and may be withdrawn as described in section 5.</li>
     <li><strong>Legitimate interests</strong> — for non-personalised advertising, for security and
         fraud prevention, and for keeping the game working correctly, balanced against your rights
         and freedoms.</li>
@@ -220,28 +232,30 @@
   <p>Data stored only on your device is not transmitted to us and is under your control.</p>
 
   <h2 id="sharing">8. Sharing and international transfers</h2>
-  <p>We do not sell, rent or share information about you, because none reaches us. The only third
-  party involved in the running of the game is <strong>Google</strong>, through its advertising and
-  consent software, and <strong>Google Play</strong> as the distribution platform.</p>
-  <p>Google operates globally, so the information it processes for advertising may be transferred to
-  and processed in countries other than yours, including the United States, under the safeguards
-  described in Google's own privacy policy. We have no separate transfer mechanism of our own
-  because we transfer nothing.</p>
+  <p>We do not sell, rent or share information about you, because none reaches us. The third parties
+  involved in the running of the game are <strong>Unity Technologies</strong>, through its
+  advertising software (LevelPlay and Unity Ads) and the advertising partners it works with, and
+  <strong>Google Play</strong> as the distribution platform.</p>
+  <p>Unity operates globally, so the information it processes for advertising may be transferred to
+  and processed in countries other than yours, including the United States and Israel, under the
+  safeguards described in Unity's own privacy policy. We have no separate transfer mechanism of our
+  own because we transfer nothing.</p>
 
   <h2 id="retention">9. Retention and deletion</h2>
   <p><strong>On your device.</strong> Your saved progress and settings remain until you remove them.
   They are erased when you uninstall the game, or when you clear the app's data in Android
   <em>Settings → Apps → MINDLOCK → Storage</em>. Once erased, progress cannot be restored: there
   is no backup on our side.</p>
-  <p><strong>With Google.</strong> Information processed for advertising is retained by Google under
+  <p><strong>With Unity.</strong> Information processed for advertising is retained by Unity under
   its own policies. Because we never receive it, we cannot delete it for you. You can reset or
-  delete your advertising identifier in your device settings, and use Google's own privacy tools.</p>
+  delete your advertising identifier in your device settings, and contact Unity through the tools
+  described in its privacy policy.</p>
   <p>We hold no user database, so there is nothing for us to delete on request. If you write to us
   with a privacy question, we keep your message only as long as needed to answer it.</p>
 
   <h2 id="security">10. Security</h2>
   <p>Saved game data is written to the app's private storage, which Android isolates from other
-  applications. Communication performed by Google's advertising software is encrypted in transit
+  applications. Communication performed by the advertising software is encrypted in transit
   using TLS.</p>
   <p>No method of electronic storage or transmission is completely secure. Because the game holds no
   personal information and no account, the practical risk to you is limited to the loss of local
@@ -256,14 +270,17 @@
     </thead>
     <tbody>
       <tr><td><code>INTERNET</code></td>
-          <td>Required by the advertising software to load consent information and advertisements.
-          The game itself needs no connection.</td></tr>
+          <td>Required by the advertising software to load advertisements. The game itself needs no
+          connection.</td></tr>
       <tr><td><code>ACCESS_NETWORK_STATE</code></td>
           <td>Lets the advertising software check whether a connection is available before
           requesting.</td></tr>
       <tr><td><code>com.google.android.gms.permission.AD_ID</code></td>
-          <td>Added by Google's advertising software so it can use the Android advertising
+          <td>Added by the advertising software so it can use the Android advertising
           identifier.</td></tr>
+      <tr><td><code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code></td>
+          <td>Added by the advertising software so it can use Android's Privacy Sandbox advertising
+          services, where your device supports them and you have not turned them off.</td></tr>
       <tr><td><code>VIBRATE</code></td>
           <td>The short vibration feedback in the game, which you can turn off in Settings.</td></tr>
     </tbody>
@@ -274,7 +291,7 @@
 
   <h2 id="children">12. Age of players and children's privacy</h2>
   <p>MINDLOCK is intended for a <strong>general audience aged 13 and over</strong>. It is not
-  directed to children, and it is configured with Google as an app that is <strong>not
+  directed to children, and it tells the advertising software that it is <strong>not
   child-directed</strong>.</p>
   <p>The game does not ask for your age or date of birth, and it therefore does not verify age. We
   do not knowingly collect personal information from children. If you believe a child has provided
@@ -291,8 +308,8 @@
   <ul>
     <li>Requests about <strong>data on your device</strong> are satisfied by you directly: the data
         is yours, on your hardware, and clearing the app's data removes it.</li>
-    <li>Requests about <strong>advertising data</strong> must be directed to Google, which is the
-        party that processes it. Google's privacy policy explains the tools available.</li>
+    <li>Requests about <strong>advertising data</strong> must be directed to Unity, which is the
+        party that processes it. Unity's privacy policy explains how to make them.</li>
     <li>You can withdraw or change consent for advertising at any time as described in section 5.</li>
   </ul>
   <p>If you want help exercising a right, write to <a href="mailto:aissamak121991@gmail.com">aissamak121991@gmail.com</a> and we
@@ -304,20 +321,21 @@
   may have rights to know, delete, correct and opt out of the "sale" or "sharing" of personal
   information, and of targeted advertising.</p>
   <p><strong>We do not sell or share personal information</strong>, and we do not receive personal
-  information from the game. Advertising is provided by Google, and some state laws treat
+  information from the game. Advertising is provided through Unity, and some state laws treat
   advertising activity of this kind as "sharing" for targeted advertising. To opt out of
-  personalised advertising, use Google's consent form through <em>Settings → Privacy choices</em>
-  where it is offered, and your Android ad settings, both described in section 5.</p>
+  personalised advertising, delete your advertising ID or turn off ad personalisation in your
+  Android settings (section 5), and use the privacy tools Unity offers, linked in section 15.</p>
   <p>We do not use personal information for any purpose that would require a notice of financial
   incentive, and we do not discriminate against anyone for exercising a privacy right.</p>
 
   <h2 id="links">15. Third-party links and services</h2>
-  <p>The game includes software from Google. Their policies apply to their own processing:</p>
+  <p>The game includes advertising software from Unity Technologies. Its policies apply to its own
+  processing:</p>
   <ul>
-    <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a></li>
-    <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">How Google uses information from sites or apps that use our services</a></li>
+    <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener noreferrer" target="_blank">Unity Game Player and App User Privacy Policy</a></li>
+    <li><a href="https://unity.com/legal/privacy-policy" rel="noopener noreferrer" target="_blank">Unity Privacy Policy</a></li>
+    <li><a href="https://docs.unity.com/en-us/grow/ads/privacy/google-data-safety" rel="noopener noreferrer" target="_blank">Unity Ads data disclosure for Google Play</a></li>
     <li><a href="https://support.google.com/android/answer/13720755" rel="noopener noreferrer" target="_blank">Manage your ad privacy settings on Android</a></li>
-    <li><a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure" rel="noopener noreferrer" target="_blank">Google Mobile Ads SDK data disclosure</a></li>
   </ul>
   <p>Advertisements themselves may link to websites operated by advertisers. We do not control those
   websites and are not responsible for their content or their privacy practices.</p>
@@ -327,6 +345,8 @@
   date at the top of the page always shows when it was last updated. Significant changes will be
   announced in the game or on this page before they take effect, where that is reasonably possible.
   Continuing to play after an update means you accept the revised policy.</p>
+  <p><strong>October 14, 2026:</strong> advertising moved from Google AdMob to Unity LevelPlay and
+  Unity Ads, and the consent message is now the game's own (sections 4, 5 and 11).</p>
 
   <h2 id="contact">17. Contact us</h2>
   <p>Questions, privacy requests or corrections:</p>
