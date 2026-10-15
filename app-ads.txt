@@ -1,6 +1,6 @@
 # AissaGames / ArdzGames — authorised sellers for our apps.
 
-# Google AdMob (Kharbga)
+# Google AdMob
 google.com, pub-7946202028449726, DIRECT, f08c47fec0942fa0
 
 # Unity LevelPlay mediation: ironSource Ads (Mindlock, Onet Things)
