@@ -138,4 +138,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://aissamak121991-art.github.io/AissaGames-Website/jelly-fuse/privacy.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
